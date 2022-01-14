@@ -1,10 +1,16 @@
 <template>
-  <div claa="home">这是主页</div>
+  <div claa="home">
+    <HomeHeader></HomeHeader>
+  </div>
 </template>
 
 <script>
+import HomeHeader from './HomeHeader.vue'
+
 export default {
-  components: {},
+  components: {
+    HomeHeader
+  },
   data() {
     return {}
   },

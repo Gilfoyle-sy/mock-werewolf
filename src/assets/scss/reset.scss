@@ -1,0 +1,83 @@
+// 清出router-link的a标签样式
+a{
+    text-decoration:none;
+    color: $color;
+}
+
+// 清除vux-input
+.vux-x-input {
+    input::-webkit-input-placeholder {
+      color: #A9A9A9 ;
+    }
+    input::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #A9A9A9;
+    }
+    input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #A9A9A9;
+    }
+    input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #A9A9A9;
+    }
+    input::-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: #A9A9A9;
+    }
+    textarea::-webkit-placeholder {
+      color: #A9A9A9 ;
+    }
+
+}
+
+// 清除vux-textarea
+.vux-x-textarea {
+    textarea::-webkit-input-placeholder {
+      color: #A9A9A9 ;
+    }
+    textarea {
+        background: transparent;
+    }
+    .weui-cell__bd {
+        color: #e7fcf3;
+    }
+}
+
+// vux-dialog 在大屏下的宽度
+.vux-x-dialog {
+
+    .weui-dialog {
+        max-width: 7rem;
+        padding: 0.2rem 0 0.4rem !important;
+    }
+
+
+    @media screen and (min-width: 1024px) {
+        .weui-dialog {
+            width: 80% !important;
+        }
+    }
+}
+
+
+
+.weui-cells {
+
+    // input基本样式
+    .vux-x-input {
+
+        .weui-cell__ft {
+
+            .weui-icon-clear {
+                font-size: 0.3rem !important;
+            }
+
+            .weui-icon-warn {
+                &::before {
+                    font-size: 0.3rem !important;
+                }
+            }
+        }
+    }
+}
