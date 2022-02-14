@@ -31,4 +31,10 @@ body {
   /*background-size: 100px 100px;!*这个是按数值缩放*!*/
   background-repeat: no-repeat; /*还有repeat-x,y等*/
 }
+
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 </style>
